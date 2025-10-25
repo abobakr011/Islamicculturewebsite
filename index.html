@@ -6,51 +6,44 @@
     <title>الثقافة الإسلامية</title>
 
     <style>
-        /* تحميل الخط (ضع ملف الخط في مجلد fonts بجانب الصفحة) */
-        @font-face {
-            font-family: "Diwani Jali";
-            src: url("fonts/DiwaniJali.ttf") format("truetype");
-            font-display: swap;
-        }
+      body, html {
+    height: 100%;
+    margin: 0;
+    background-color: #87CEEB;
+    direction: rtl;
+    overflow: hidden; /* يمنع شريط التمرير */
+}
 
-        body, html {
-            height: 100%;
-            margin: 0;
-            background-color: #87CEEB;
-            direction: rtl;
-            overflow: hidden; /* يمنع شريط التمرير */
-        }
+.nav-links {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
 
-        .nav-links {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-        }
+.nav-links a img {
+    height: 100px;
+    width: 100px;
+    margin: 0 10px;
+}
 
-        .nav-links a img {
-            height: 100px;
-            width: 100px;
-            margin: 0 10px;
-        }
+/* النص الرئيسي في منتصف الصفحة */
+.main-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    line-height: 1.8;
+    color: black;
+}
 
-        /* النص الرئيسي في منتصف الصفحة */
-        .main-text {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            text-align: center;
-            line-height: 1.8;
-            color: black;
-        }
-
-        .main-text h1 {
-            font-family: "Diwani Jali", "Diwani Letter", "Traditional Arabic", Arial, sans-serif;
-            font-size: 3rem;
-            margin: 0;
-        }
-    </style>
+.main-text h1 {
+    font-family: "Diwani Jali", "Diwani Letter", "Traditional Arabic", Arial, sans-serif;
+    font-size: 3rem;
+    margin: 0;
+}
+  </style>
 </head>
 <body>
 
@@ -70,6 +63,7 @@
 
 </body>
 </html>
+
 
 
 
