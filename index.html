@@ -6,12 +6,19 @@
     <title>الثقافة الإسلامية</title>
 
     <style>
+        /* تحميل الخط (ضع ملف الخط في مجلد fonts بجانب الصفحة) */
+        @font-face {
+            font-family: "Diwani Jali";
+            src: url("fonts/DiwaniJali.ttf") format("truetype");
+            font-display: swap;
+        }
+
         body, html {
             height: 100%;
             margin: 0;
             background-color: #87CEEB;
-            font-family: Arial, sans-serif;
             direction: rtl;
+            overflow: hidden; /* يمنع شريط التمرير */
         }
 
         .nav-links {
@@ -26,48 +33,43 @@
             margin: 0 10px;
         }
 
+        /* النص الرئيسي في منتصف الصفحة */
         .main-text {
-            height: 100vh;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
+            height: 100vh;
             text-align: center;
             line-height: 1.8;
             color: black;
         }
 
-        /* هنا نضيف خط ديواني للنص */
         .main-text h1 {
             font-family: "Diwani Jali", "Diwani Letter", "Traditional Arabic", Arial, sans-serif;
             font-size: 3rem;
             margin: 0;
-        }
-
-        /* الخط الافتراضي للجدول */
-        table, td, th {
-            font-family: Arial, sans-serif;
         }
     </style>
 </head>
 <body>
 
     <div class="nav-links">
-        <a href="شيفرةالطمأنينة.html"><img src="شيفرةالطمأنينة.png" alt="شيفرةالطمأنينة" ></a>
-        <a href="قصةبلال.html">
-            <img src="قصةبلال.png" alt="قصة بلال">
-        </a>
-        <a href="index.html">
-            <img src="الصفحة الرئيسية.png" alt="الصفحة الرئيسية">
-        </a>
-        <a href="شفرةالإيمان.html">
-            <img src="شفرة الإيمان.png" alt="شفرةالإيمان">
-        </a>
+        <a href="شيفرةالطمأنينة.html"><img src="شيفرةالطمأنينة.png" alt="شيفرةالطمأنينة"></a>
+        <a href="قصةبلال.html"><img src="قصةبلال.png" alt="قصة بلال"></a>
+        <a href="index.html"><img src="الصفحة الرئيسية.png" alt="الصفحة الرئيسية"></a>
+        <a href="شفرةالإيمان.html"><img src="شفرة الإيمان.png" alt="شفرةالإيمان"></a>
     </div>
 
     <div class="main-text">
-        <h1>ملخص قصة بلال</h1>
+        <h1>كل ما تحتاجه</h1>
+        <h1>لفهم الثقافة الإسلامية</h1>
+        <h1>موجود هنا</h1>
     </div>
 
 </body>
 </html>
+
+
+
 
